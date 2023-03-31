@@ -1,0 +1,45 @@
+Customer Loan Accounts
+
+This project is an extension of the Loan Accounts Hierarchy project. The goal is to add a Customer class to the hierarchy, which will have an array list of loan accounts and methods to add loan accounts, get customer information, and print a monthly report for all the customer's loan accounts.
+
+Customer Class
+
+The Customer class has the following properties:
+
+firstName (String) - the customer's first name.
+lastName (String) - the customer's last name.
+SSN (String) - the customer's Social Security Number.
+loanAccounts (ArrayList<LoanAccount>) - an array list of loan accounts.
+And the following methods:
+
+Customer(firstName: String, lastName: String, SSN: String) - constructor that accepts firstName, lastName, and SSN as parameters.
+getFirstName(): String - getter for firstName.
+getLastName(): String - getter for lastName.
+getSSN(): String - getter for SSN.
+addLoanAccount(account: LoanAccount): void - adds a loan to the array list of loans for this customer.
+printMonthlyReport(): String - prints all the information for all the accounts of this Customer. Utilizes the toString() method of the corresponding loan class. The output of the printMonthlyReport() method should match the sample output displayed below.
+Loan Accounts
+
+The Loan Accounts Hierarchy consists of the following loan account classes:
+
+LoanAccount - abstract base class for all loan accounts.
+CarLoan - represents a loan for a car.
+UnsecuredLoan - represents an unsecured loan.
+PrimaryMortgage - represents a primary mortgage loan.
+All loan account classes have the following properties:
+
+principal (double) - the principal amount of the loan.
+interestRate (double) - the annual interest rate.
+term (int) - the term of the loan in months.
+The PrimaryMortgage class has an additional property:
+
+pmi (double) - the monthly PMI amount.
+The PrimaryMortgage and CarLoan classes have an additional property:
+
+address (Address) - the address of the property for which the loan was taken out.
+All loan account classes have the following method:
+
+getMonthlyPayment(): double - calculates and returns the monthly payment for the loan.
+Testing
+
+Use the following code in your main function to test your classes, just copy and paste it into your main method:

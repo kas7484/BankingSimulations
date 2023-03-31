@@ -1,0 +1,55 @@
+Loan Account Hierarchy
+
+This project consists of a Loan Account Hierarchy which includes several classes: LoanAccount, CarLoan, PrimaryMortgage, UnsecuredLoan, and Address. Each class is contained in its own .java file.
+
+LoanAccount Class
+
+The LoanAccount class contains the following properties:
+
+principal: the original amount of the loan.
+annualInterestRate: the annual interest rate for the loan. It is not static as each loan can have its own interest rate.
+months: the number of months in the term of the loan, i.e., the length of the loan.
+It also has the following methods:
+
+A constructor that takes the three properties as parameters.
+calculateMonthlyPayment(): takes no parameters and calculates the monthly payment using the same formula as Assignment 1.
+Getters for the three property variables.
+toString(): displays the information about the principle, annualInterestRate, and months as shown in the example output below.
+CarLoan Class
+
+The CarLoan class is a subclass of the LoanAccount class and contains the following property:
+
+vehicleVIN: the VIN number of the car, as a string.
+It also has the following methods:
+
+A constructor that accepts the three parameters of the LoanAccount class and the vehicleVIN.
+toString(): displays the information about the VIN number as shown in the example output below.
+PrimaryMortgage Class
+
+The PrimaryMortgage class is a subclass of LoanAccount and contains the following properties:
+
+PMIMonthlyAmount: the amount of the Primary Mortgage Insurance which is required for all mortgages where the down payment is not at least 20% of the home value.
+Address: the address of the real estate and is an object of the Address class.
+It also has the following methods:
+
+A constructor that accepts the three parameters of the LoanAccount class, the PMIMonthlyAmount, and the Address object containing the address.
+toString(): displays the information about the PMIMonthlyAmount and Address as shown in the example output below.
+UnsecuredLoan Class
+
+The UnsecuredLoan class is a subclass of LoanAccount and has no additional properties. It contains the following methods:
+
+A constructor that accepts the three parameters of the LoanAccount class.
+toString(): displays the information that it is an Unsecured Loan as shown in the example output below.
+Address Class
+
+The Address class contains the following properties:
+
+street: the house number and street part of the address.
+city: the city where it is located.
+state: the state.
+zipcode: the zipcode.
+It also has the following methods:
+
+A constructor which accepts the values for the four properties as parameters.
+Getters for each property.
+toString(): displays the address information as shown in the example below.

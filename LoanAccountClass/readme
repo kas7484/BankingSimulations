@@ -1,0 +1,38 @@
+Loan Account Class
+
+This project contains a Java class called LoanAccount which models a loan account.
+
+Program Explanation
+
+The program creates two loan accounts, loan1 and loan2, with principal loan amounts of $5000.00 and $31000.00, respectively. It sets the annual interest rate to 1%, then calculates the monthly payment for each loan for 36 months, 60 months, and 72 months and prints the monthly payment amounts for both loans. Next, it sets the annual interest rate to 5%, and outputs the same information again.
+
+The program uses the LoanAccount class, which contains a static variable to store the annual interest rate for all account holders, an instance variable indicating the amount the person is borrowing, and two methods to calculate the monthly payment and set the annual interest rate. The calculateMonthlyPayment method calculates the monthly payment for the loan account using the formula provided in the assignment.
+
+The dollar amounts are displayed to two decimal places.
+
+The code to test the LoanAccount class is in the main method of the LoanAccount class.
+
+Class Details
+
+The LoanAccount class contains the following:
+
+Static variable
+annualInterestRate : a static variable to store the annual interest rate for all account holders.
+
+Instance variable
+principal : a private instance variable indicating the amount the person is borrowing.
+
+Constructor
+LoanAccount(double principal) : sets the initial loan amount (Principal) for a new loan.
+
+Methods
+public double calculateMonthlyPayment(int numberOfPayments) : calculates the monthly payment for the loan account by using the formula provided in the assignment.
+public static void setAnnualInterestRate(double annualInterestRate) : sets the annual interest rate to a new value.
+
+Testing
+
+A program is provided in the LoanAccount class to test the LoanAccount class. It creates two LoanAccount objects, loan1 and loan2, with principal loan amounts of $5000.00 and $31000.00, respectively. It sets annualInterestRate to 1%, then calculates the monthly payment for each loan for 36 months, 60 months, and 72 months and prints the monthly payment amounts for both loans. Then, it sets the annualInterestRate to 5%, and outputs the same information again.
+
+The dollar amounts are displayed to two decimal places.
+
+The code to test the LoanAccount class is in the main method of the LoanAccount class.
